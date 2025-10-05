@@ -1,95 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Swag Cutz | Barber Shop in Midrand</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <header class="hero">
-    <nav class="navbar">
-      <div class="logo">Swag Cutz</div>
-      <div class="menu-toggle" id="menu-toggle">☰</div>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="hero-text">
-      <h2>Look Sharp. Feel Fresh.</h2>
-      <p>Top-rated barber shop in Midrand.</p>
-      <a href="#booking" class="btn">Book a Cut</a>
-    </div>
-  </header>
 
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>
-      Swag Cutz is your go-to barber shop in Midrand, offering sharp cuts,
-      clean fades, and premium grooming. Conveniently located in the
-      Midrand Value Centre, we’re known for our friendly atmosphere and
-      professional service.
-    </p>
-  </section>
-
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Men’s Haircuts</li>
-      <li>Fades & Beard Trims</li>
-      <li>Kids’ Cuts</li>
-      <li>Styling & Grooming Packages</li>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Swag Cutz</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h1>Fresh Cuts, Sharp Style.</h1>
+    <p>Located in the heart of Midrand — Swag Cutz delivers precision, personality, and perfection in every cut.</p>
   </section>
 
-  <section id="gallery" class="gallery">
-    <h2>Gallery</h2>
+  <!-- Gallery Section -->
+  <section class="gallery" id="gallery">
+    <h2>Our Work</h2>
     <div class="gallery-grid">
-      <img src="images/Screenshot%202025-10-04%20120534.png" alt="Barber style 1" />
-      <img src="images/Screenshot%202025-10-04%20120551.png" alt="Barber style 2" />
-      <img src="images/Screenshot%202025-10-04%20120957.png" alt="Barber style 3" />
-      <img src="images/Screenshot%202025-10-04%20121024.png" alt="Barber style 4" />
+      <img src="images/Screenshot%202025-10-04%20120534.png" alt="Cut 1">
+      <img src="images/Screenshot%202025-10-04%20120551.png" alt="Cut 2">
+      <img src="images/Screenshot%202025-10-04%20120957.png" alt="Cut 3">
+      <img src="images/Screenshot%202025-10-04%20121024.png" alt="Cut 4">
     </div>
   </section>
 
-  <section id="reviews" class="reviews">
-    <h2>Customer Reviews</h2>
-    <p>⭐️⭐️⭐️⭐️⭐️ 5.0 (7 reviews)</p>
-    <blockquote>“Best cut I’ve ever had! Always on point.”</blockquote>
-    <blockquote>“Clean fades, great vibe, amazing service.”</blockquote>
-    <a href="https://www.google.com/maps/place/Swag+Cutz+Midrand"
-       target="_blank" class="btn">See more on Google</a>
-  </section>
-
-  <section id="booking" class="booking">
-    <h2>Book Your Appointment</h2>
-    <p>Call us or book directly on WhatsApp!</p>
-    <a href="https://wa.me/27606364102" class="btn">Book on WhatsApp</a>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Visit Us</h2>
     <p><strong>Address:</strong> Shop 9, Midrand Value Centre, CRN Old Pretoria Main & Olifantsfontein Rd, Midrand, 1783</p>
+    <p><strong>Hours:</strong> Open until 8 PM</p>
     <p><strong>Phone:</strong> <a href="tel:0606364102">060 636 4102</a></p>
-    <p><strong>Hours:</strong> Open daily · Closes 8 pm</p>
-    <iframe
-      src="https://www.google.com/maps?q=Swag+Cutz+Midrand+Value+Centre&output=embed"
-      loading="lazy"></iframe>
+
+    <div class="social-links">
+      <a href="#" target="_blank" id="instagram-link"><i class="fab fa-instagram"></i></a>
+    </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Swag Cutz | All Rights Reserved</p>
-    <div class="socials">
-      <a href="#">Instagram</a>
-      <a href="#">Facebook</a>
-      <a href="#">TikTok</a>
-    </div>
+    <p>© 2025 Swag Cutz — All Rights Reserved</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
