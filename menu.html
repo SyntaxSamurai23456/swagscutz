@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Menu — Green Dot Café</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- HEADER (identical to index.html) -->
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Green Dot Café home">
+        <img src="images/152769659_1175921316211376_146868840016642031_n.jpg" alt="Green Dot Café logo" class="logo">
+        <span class="brand-text">Green Dot Café</span>
+      </a>
+
+      <nav id="nav" class="nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#hours">Hours</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Keep the Order/Order Now button in the header (identical behavior) -->
+        <a class="btn primary" href="https://www.ubereats.com/za/store/green-dot-cafe/X1OWaJ--TIe2025uF4pgeA" target="_blank" rel="noopener">Order Now</a>
+        <button id="mobileToggle" class="mobile-toggle" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container menu-page">
+    <section class="menu-controls">
+      <input id="menuSearch" placeholder="Search menu (e.g. 'Cortado', 'Burger')" aria-label="Search menu">
+      <div class="menu-filter-row">
+        <button class="mfilter active" data-cat="all">All</button>
+        <button class="mfilter" data-cat="breakfast">Breakfast</button>
+        <button class="mfilter" data-cat="smoothies">Smoothies</button>
+        <button class="mfilter" data-cat="brunch">Brunch</button>
+        <button class="mfilter" data-cat="lunch">Lunch</button>
+        <button class="mfilter" data-cat="bowls">Bowls</button>
+        <button class="mfilter" data-cat="sweet">Sweet Bar</button>
+        <button class="mfilter" data-cat="drinks">Drinks</button>
+        <button class="mfilter" data-cat="hookah">Hookah</button>
+      </div>
+    </section>
+
+    <section id="menuList" class="menu-list">
+      <!-- Breakfast -->
+      <div class="menu-category" data-cat="breakfast">
+        <h2>Breakfast</h2>
+        <div class="item">
+          <div class="item-left">
+            <h3>CLASSIC GRANOLA BOWL</h3>
+            <p class="desc">Double thick yoghurt infused with honey & lemon zest, in-house granola & seasonal fruit.</p>
+          </div>
+          <div class="item-right">R120</div>
+        </div>
+
+        <div class="item">
+          <div class="item-left">
+            <h3>PANNA COTTA PARFAIT</h3>
+            <p class="desc">Vanilla Bean panna cotta sphere, served with raspberry coulis & in-house nutty granola.</p>
+          </div>
+          <div class="item-right">R120</div>
+        </div>
+
+        <div class="item">
+          <div class="item-left">
+            <h3>AVOCADO PARFAIT</h3>
+            <p class="desc">Avocado crème infused with mint, garnished with pineapple & nutty granola.</p>
+          </div>
+          <div class="item-right">R120</div>
+        </div>
+
+        <div class="item">
+          <div class="item-left"><h3>OAT SO TASTY</h3>
+            <p class="desc">Slow-cooked oats with orange zest, full cream milk, seasonal fruit, chia & nut brittle.</p></div>
+          <div class="item-right">R90</div>
+        </div>
+
+        <div class="item small">Alternative Milk: Oat / Almond — <strong>R15</strong></div>
+      </div>
+
+      <!-- Smoothies -->
+      <div class="menu-category" data-cat="smoothies">
+        <h2>Smoothies</h2>
+        <div class="item"><div class="item-left"><h3>THE GREENERY</h3><p class="desc">Spinach, celery, cucumber, kiwi, mint, ginger, lemon & honey — blended with milk & ice.</p></div><div class="item-right">R75</div></div>
+        <div class="item"><div class="item-left"><h3>VERY BERRY</h3><p class="desc">Mixed berries, yoghurt, nuts & honey — blended with milk & ice.</p></div><div class="item-right">R75</div></div>
+        <div class="item"><div class="item-left"><h3>THE STIFF ONE</h3><p class="desc">Ginger, carrot, banana, lemon, pineapple, honey, chia & turmeric.</p></div><div class="item-right">R75</div></div>
+        <div class="item"><div class="item-left"><h3>PB - DELIGHT</h3><p class="desc">Peanut butter, banana, lindt chocolate & yoghurt.</p></div><div class="item-right">R75</div></div>
+        <div class="item"><div class="item-left"><h3>PROTEIN POWER</h3><p class="desc">Peanut butter, banana, yoghurt, whey powder, cinnamon, chia & almonds.</p></div><div class="item-right">R75</div></div>
+      </div>
+
+      <!-- Brunch -->
+      <div class="menu-category" data-cat="brunch">
+        <h2>Brunch Plates</h2>
+        <div class="item"><div class="item-left"><h3>THE GREEN HOUSE</h3><p class="desc">2 eggs (fried your way), beef sausage, lamb macon, blistered rosa tomatoes, thyme mushrooms, avocado rosette, toasted bread.</p></div><div class="item-right">R155</div></div>
+
+        <div class="item"><div class="item-left"><h3>HOLE IN ONE</h3><p class="desc">Toasted bagel, rocket, tomato, grilled lamb macon, caramelised onions, sriracha mayo, easy over fried egg.</p></div><div class="item-right">R135</div></div>
+
+        <div class="item"><div class="item-left"><h3>QUATTRO OMELETTE</h3><p class="desc">Eggs folded with emmenthal, mozzarella, mature cheddar & gouda, chives.</p></div><div class="item-right">R125</div></div>
+
+        <div class="item"><div class="item-left"><h3>EGGS BENEDICT</h3><p class="desc">Toasted English muffin, rocket, avocado, tomato, two poached eggs, in-house hollandaise.</p></div><div class="item-right">R135</div></div>
+
+        <div class="item"><div class="item-left"><h3>TURKISH EGGS</h3><p class="desc">Sourdough, labneh with mint & lemon, poached eggs, smoked paprika oil & pistachio.</p></div><div class="item-right">R145</div></div>
+
+        <div class="item"><div class="item-left"><h3>PARMESAN SCRAMBLE</h3><p class="desc">Brioche, fluffy scrambled eggs, rocket & parmesan.</p></div><div class="item-right">R145</div></div>
+
+        <div class="item"><div class="item-left"><h3>MEDITERRANEAN SHAKSHOUKA</h3><p class="desc">Tomato & pepper medley with aubergine, two poached eggs, feta & basil aioli.</p></div><div class="item-right">R150</div></div>
+
+        <div class="item"><div class="item-left"><h3>BAGEL — SALMON</h3><p class="desc">Bagel, lemon-chive cream cheese, smoked salmon, cucumber & avocado.</p></div><div class="item-right">R165</div></div>
+
+        <div class="item small">Extras (Brunch): Thyme grilled mushroom R30 · Blistered tomato R15 · Lamb Macon R40 · Haloumi R40 · Beef Sausage R45 · Smoked salmon (50g) R60 · Avocado R35 · Egg R15 · Hash-brown R30 · Fries R45 · Bread R20 / portion · Gluten Free +R35 · Everything Bagel +R25</div>
+      </div>
+
+      <!-- Toasties -->
+      <div class="menu-category" data-cat="toasties">
+        <h2>Toasties (All Day)</h2>
+        <div class="item"><div class="item-left"><h3>BOMBAY</h3><p class="desc">Wholewheat, coriander-mint sauce, tamarind potato, mozzarella, pickled onion, sev & nuts.</p></div><div class="item-right">R115</div></div>
+        <div class="item"><div class="item-left"><h3>QUATTRO</h3><p class="desc">Ciabatta with mozzarella, gouda, mature cheddar & emmenthal.</p></div><div class="item-right">R115</div></div>
+        <div class="item"><div class="item-left"><h3>CHIPOTLE CHICKEN</h3><p class="desc">Ciabatta, cape herb chipotle chicken, provolone & jalapeños.</p></div><div class="item-right">R115</div></div>
+        <div class="item"><div class="item-left"><h3>CAPRESE</h3><p class="desc">Ciabatta, basil pesto, mozzarella, rocket, jam tomato & balsamic.</p></div><div class="item-right">R115</div></div>
+        <div class="item"><div class="item-left"><h3>PHILLY STEAK</h3><p class="desc">Pulled beef, southwestern sauce, provolone & caramelised onions.</p></div><div class="item-right">R125</div></div>
+        <div class="item"><div class="item-left"><h3>LET'S GET SMASHED</h3><p class="desc">Lemon ricotta avocado cream on ciabatta. Vegan option available.</p></div><div class="item-right">R115</div></div>
+
+        <div class="item small">Extras: Egg R15 · Chilli Oil R25 · Fries R45</div>
+      </div>
+
+      <!-- Vegan -->
+      <div class="menu-category" data-cat="vegan">
+        <h2>Vegan</h2>
+        <div class="item"><div class="item-left"><h3>CHUNKY CHUNA</h3><p class="desc">Smashed chickpeas with red onion, celery, carrots, Dijon & tahini. Served with bread (Sourdough / Ciabatta). Gluten free +R25</p></div><div class="item-right">R105</div></div>
+      </div>
+
+      <!-- Lunch -->
+      <div class="menu-category" data-cat="lunch">
+        <h2>Lunch (from 12:00)</h2>
+        <div class="item"><div class="item-left"><h3>LOCO TACOS (3) — CHICKEN</h3><p class="desc">Pulled chipotle chicken, pineapple & mint salsa, coriander aioli.</p></div><div class="item-right">R175</div></div>
+        <div class="item"><div class="item-left"><h3>LOCO TACOS (3) — BEEF</h3><p class="desc">Pulled brisket, pineapple & mint salsa, coriander aioli.</p></div><div class="item-right">R175</div></div>
+
+        <div class="item"><div class="item-left"><h3>CLASSIC BURGER</h3><p class="desc">Brioche, in-house sauce, rocket & gherkins. 200g Wagyu patty, gouda & caramelised onions. Served with fries.</p></div><div class="item-right">R165</div></div>
+
+        <div class="item"><div class="item-left"><h3>HALOUMI BURGER</h3><p class="desc">Sesame crusted haloumi, red pepper pesto, rocket & fries.</p></div><div class="item-right">R145</div></div>
+
+        <div class="item"><div class="item-left"><h3>CHICKEN PREGO</h3><p class="desc">Prego roll with grilled cajun chicken, house prego sauce & fries.</p></div><div class="item-right">R145</div></div>
+
+        <div class="item"><div class="item-left"><h3>PASTA ARRABBIATA</h3><p class="desc">Al dente pasta with chilli & cream arrabbiata, parmesan tuile. Penne or Linguine.</p></div><div class="item-right">R155</div></div>
+
+        <div class="item"><div class="item-left"><h3>PASTA ALFREDO</h3><p class="desc">Mascarpone & cream with portobello mushrooms, shimenji & parmesan tuile. Penne or Linguine.</p></div><div class="item-right">R155</div></div>
+
+        <div class="item small">Pasta extras: Chicken R55 · Macon R40</div>
+      </div>
+
+      <!-- Bowls -->
+      <div class="menu-category" data-cat="bowls">
+        <h2>Bowls & Soups</h2>
+        <div class="item"><div class="item-left"><h3>BUTTER CHICKEN BOWL</h3><p class="desc">Smokey spices with cashews, cream & yoghurt — grilled chicken cubes, basmati rice or puff paratha & pickles.</p></div><div class="item-right">R175</div></div>
+
+        <div class="item"><div class="item-left"><h3>CHICKPEA & LENTIL CURRY</h3><p class="desc">Slow-roasted tomatoes, chickpeas & lentils with coconut cream — served with puff paratha & pickles.</p></div><div class="item-right">R145</div></div>
+
+        <div class="item"><div class="item-left"><h3>SLOW ROASTED TOMATO & BASIL SOUP</h3><p class="desc">Served with Caprese toastie. Mascarpone & parmesan finish.</p></div><div class="item-right">R115</div></div>
+      </div>
+
+      <!-- Sandwiches & Wraps -->
+      <div class="menu-category" data-cat="sandwiches">
+        <h2>Sandwiches & Wraps</h2>
+        <div class="item"><div class="item-left"><h3>Harissa Chicken Sandwich</h3><p class="desc">Soft rye, rocket, harissa chicken, cucumber & red onion.</p></div><div class="item-right">R85</div></div>
+
+        <div class="item"><div class="item-left"><h3>Mediterranean Tuna</h3><p class="desc">Soft rye, rocket, tuna with lemon & mint.</p></div><div class="item-right">R85</div></div>
+
+        <div class="item"><div class="item-left"><h3>Chunky Egg</h3><p class="desc">Soft rye, rocket, chunky egg mayo with dijon & chives.</p></div><div class="item-right">R85</div></div>
+
+        <div class="item"><div class="item-left"><h3>BLT</h3><p class="desc">Soft rye, rocket, beef pastrami, gherkins & relish.</p></div><div class="item-right">R85</div></div>
+
+        <div class="item"><div class="item-left"><h3>Wrap — Roast Chicken & Avo</h3><p class="desc">Wholewheat wrap, rocket, roast chicken, feta & avocado.</p></div><div class="item-right">R85</div></div>
+
+        <div class="item small">Other wraps: Caprese Chicken R85 · Asian Steak R85 · Mediterranean Haloumi R85</div>
+      </div>
+
+      <!-- Baguettes -->
+      <div class="menu-category" data-cat="baguettes">
+        <h2>Baguettes</h2>
+        <div class="item"><div class="item-left"><h3>Tikka Chicken Baguette</h3><p class="desc">With pineapple & cooling mint mayo.</p></div><div class="item-right">R90</div></div>
+        <div class="item"><div class="item-left"><h3>Steak & Onion</h3><p class="desc">Grilled steak & caramelised onion on baguette.</p></div><div class="item-right">R90</div></div>
+      </div>
+
+      <!-- Sweet Bar -->
+      <div class="menu-category" data-cat="sweet">
+        <h2>Sweet Bar (All Day)</h2>
+        <div class="item"><div class="item-left"><h3>FLAPJACK TACOS</h3><p class="desc">Fluffy flapjacks with maple, Nutella, cream, strawberries & pistachio.</p></div><div class="item-right">R125</div></div>
+
+        <div class="item"><div class="item-left"><h3>O-MG FRENCH TOAST</h3><p class="desc">Brioche double-dipped, cornflakes coating, berries & mascarpone.</p></div><div class="item-right">R125</div></div>
+
+        <div class="item"><div class="item-left"><h3>BANANA BREAD</h3><p class="desc">Banana & walnut, coffee syrup, house caramel, cream & nut brittle.</p></div><div class="item-right">R95</div></div>
+
+        <div class="item"><div class="item-left"><h3>WAFFLE — Classic</h3><p class="desc">Classic with syrup.</p></div><div class="item-right">R95</div></div>
+        <div class="item small">Waffle extras: Nutella R25 · Caramelised Banana R30 · Berries R40 · Ice-cream R30</div>
+
+        <div class="item"><div class="item-left"><h3>Pastry Display</h3><p class="desc">Basque Cheesecake R85 · Cardamom Sticky Bun R45 · Croissant R30 · Pain Au Chocolat R40 · Apple Crumble R105 · Tiramisu R95 · Pistachio & White Chocolate Cake R115</p></div></div>
+      </div>
+
+      <!-- Hookah -->
+      <div class="menu-category" data-cat="hookah">
+        <h2>Hookah Vibes</h2>
+        <div class="item"><div class="item-left"><h3>HOOKAH</h3><p class="desc">Choice of flavours — Mint, Biscuit, Pacific Wind, Mandela's 27, Eskimo Watermelon. Includes 2 disposable mouthpieces.</p></div><div class="item-right">R200</div></div>
+        <div class="item small">Extras: Head Change R50 · Additional Mouth Pieces R10 each</div>
+      </div>
+
+      <!-- Drinks (Good Damn Coffee — Hot & Iced) -->
+      <div class="menu-category" data-cat="drinks">
+        <h2>Good Damn Coffee — Hot Drinks & Teas</h2>
+
+        <div class="item"><div class="item-left"><h3>ESPRESSO</h3><p class="desc">Single / Double</p></div><div class="item-right">R20 / R25</div></div>
+        <div class="item"><div class="item-left"><h3>AMERICANO</h3><p class="desc">Short / Tall</p></div><div class="item-right">R30 / R35</div></div>
+        <div class="item"><div class="item-left"><h3>CORTADO</h3><p class="desc">Recommended beverage.</p></div><div class="item-right">R37</div></div>
+        <div class="item"><div class="item-left"><h3>FLAT WHITE</h3><p class="desc"></p></div><div class="item-right">R39</div></div>
+        <div class="item"><div class="item-left"><h3>CAPPUCCINO</h3><p class="desc">Short / Tall</p></div><div class="item-right">R37 / R42</div></div>
+        <div class="item"><div class="item-left"><h3>CAFE LATTE</h3><p class="desc">Short / Tall</p></div><div class="item-right">R37 / R42</div></div>
+
+        <div class="item"><div class="item-left"><h3>CHAI LATTE</h3></div><div class="item-right">R42 / R47</div></div>
+        <div class="item"><div class="item-left"><h3>MATCHA LATTE</h3></div><div class="item-right">R49 / R57</div></div>
+        <div class="item"><div class="item-left"><h3>HOT CHOCOLATE</h3></div><div class="item-right">R42 / R47</div></div>
+
+        <div class="item small">Extras: Espresso shot R12 · Milk R8 · Cream R15 · Flavoured syrup R15 (Hazelnut / Vanilla) · Signature Butterscotch syrup R25 · Non-dairy milk (Oat/Almond) R15</div>
+
+        <h3>Iced Drinks & Basics</h3>
+        <div class="item"><div class="item-left"><h3>ICED LATTES — Original</h3></div><div class="item-right">R40</div></div>
+        <div class="item"><div class="item-left"><h3>SIGNATURE BUTTERSCOTCH ICED LATTE</h3></div><div class="item-right">R65</div></div>
+        <div class="item"><div class="item-left"><h3>FREEZOCHINOS — Chocolate / Coffee</h3></div><div class="item-right">R55</div></div>
+
+        <div class="item"><div class="item-left"><h3>BASICS</h3><p class="desc">Water R35 · Coke R25 · San Pellegrino R40 · Orange Juice R40 · Double Shot Ice Tea R40</p></div></div>
+
+        <h3>Cold Pressed</h3>
+        <div class="item"><div class="item-left"><h3>THE ORANGE</h3><p class="desc">Orange, carrot & ginger — R70</p></div></div>
+        <div class="item"><div class="item-left"><h3>THE GREEN!</h3><p class="desc">Kale, spinach, cucumber, celery, pink lady, pineapple & mint — R70</p></div></div>
+        <div class="item"><div class="item-left"><h3>THE RED!</h3><p class="desc">Beetroot, strawberry, blueberry, pear & pink lady — R70</p></div></div>
+
+        <div class="item small">Extra Ginger Shot R20 · A discretionary 10% is levied on a table of 5 or more.</div>
+      </div>
+    </section>
+  </main>
+
+    <footer class="footer">
+    <div class="container footer-inner">
+      <div class="left">
+        <img src="images/152769659_1175921316211376_146868840016642031_n.jpg" alt="logo" class="f-logo">
+        <p style="color:rgba(255,255,255,0.9)">© <span id="year"></span> Green Dot Café</p>
+      </div>
+      <div class="right socials">
+        <!-- Uber Eats -->
+        <a href="https://www.ubereats.com/za/store/green-dot-cafe/X1OWaJ--TIe2025uF4pgeA" target="_blank" rel="noopener" aria-label="Uber Eats" class="social">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="36" height="36" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M21 3H3v18h18V3zm-9 15c-3.31 0-6-2.69-6-6 0-.46.05-.91.15-1.35L4.22 8.72C4.08 9.45 4 10.21 4 11c0 4.42 3.58 8 8 8 2.21 0 4.21-.9 5.65-2.35l-1.43-1.43A5.97 5.97 0 0112 18z"/>
+          </svg>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/green_dot_cafe/" target="_blank" rel="noopener" aria-label="Instagram" class="social">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="36" height="36" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zm4.25 3.25a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm4.75-.75a1 1 0 110 2 1 1 0 010-2z"/>
+          </svg>
+        </a>
+
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@greendotcafe" target="_blank" rel="noopener" aria-label="TikTok" class="social">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="36" height="36" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M12.75 2a6 6 0 004.25 1.75V7a9 9 0 01-4.25-1V14a5 5 0 11-5-5h1.25v2H8a3 3 0 100 6 3 3 0 003-3V2h1.75z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

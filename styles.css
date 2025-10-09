@@ -1,0 +1,292 @@
+/* -------------------------
+   Green Dot Café — Styles
+   Minimal Luxury Theme
+   Colors: #3C5134 (forest), #EADCC2 (accent), white
+   ------------------------- */
+
+:root{
+  --forest: #3C5134;
+  --forest-2: #2f422f;
+  --accent: #EADCC2;
+  --white: #ffffff;
+  --glass: rgba(255,255,255,0.06);
+  --max: 1200px;
+  --radius: 14px;
+  --ease: cubic-bezier(.2,.9,.3,1);
+  --ff-heading: "Playfair Display", serif;
+  --ff-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:var(--ff-body);
+  /* changed default text color from green to white per request */
+  color: rgba(255,255,255,0.95);
+  background:var(--forest);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+}
+
+/* layout container */
+.container{max-width:var(--max);margin:0 auto;padding:0 20px}
+
+/* Header */
+.header{
+  position:fixed;left:0;right:0;top:18px;z-index:120;
+  pointer-events:auto;
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+  border-radius:18px;padding:10px 18px;backdrop-filter: blur(6px);box-shadow:0 8px 30px rgba(0,0,0,0.25);
+  align-items:center;
+}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--white)}
+.logo{width:54px;height:54px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.06)}
+.brand-text{font-family:var(--ff-heading);font-weight:700;color:var(--accent);letter-spacing:0.6px}
+
+/* Nav */
+.nav{display:flex;gap:18px;align-items:center}
+.nav a{color:var(--accent);text-decoration:none;font-weight:600;padding:6px 8px;border-radius:8px;transition:all .28s var(--ease);font-size:0.95rem}
+.nav a:hover{background:rgba(255,255,255,0.03);transform:translateY(-2px)}
+
+/* Actions */
+.header-actions{display:flex;align-items:center;gap:12px}
+.btn{display:inline-block;text-decoration:none;padding:9px 14px;border-radius:999px;font-weight:700;letter-spacing:0.4px}
+.primary{background:var(--accent);color:var(--forest);box-shadow:0 6px 18px rgba(0,0,0,0.18)}
+.ghost{background:transparent;color:var(--accent);border:1px solid rgba(255,255,255,0.06)}
+
+/* Mobile toggle */
+.mobile-toggle{display:none;background:none;border:0;color:var(--accent);font-size:1.3rem}
+
+/* HERO */
+.hero{position:relative;height:88vh;min-height:560px;display:flex;align-items:center;justify-content:center;overflow:hidden;margin-top:10px}
+.hero-media{position:absolute;inset:0;overflow:hidden}
+.hero-video{width:110%;height:110%;object-fit:cover;transform:scale(1.02);filter:contrast(0.95) saturate(.98);will-change:transform}
+.steam{position:absolute;inset:0;background:linear-gradient(180deg, rgba(58,79,59,0.35), rgba(31,31,31,0.15));mix-blend-mode:multiply}
+
+.hero-inner{position:relative;z-index:4;text-align:center;color:var(--white);padding:6rem 20px}
+.hero-logo{width:110px;height:110px;border-radius:20px;border:6px solid rgba(255,255,255,0.05);object-fit:cover;margin:0 auto 12px;display:block}
+.hero-title{font-family:var(--ff-heading);font-size:3.2rem;margin:0 0 12px;letter-spacing:-0.8px;color:var(--white)}
+.hero-title .muted{color:var(--accent);font-weight:600;display:block;margin-top:6px;font-size:1.1rem}
+.hero-sub{color:rgba(255,255,255,0.9);max-width:820px;margin:12px auto 20px;font-size:1.05rem}
+.hero-cta{display:flex;gap:12px;align-items:center;justify-content:center}
+
+/* sections */
+.section{padding:84px 0}
+.split{display:flex;gap:36px;align-items:center}
+.split .col{flex:1}
+.split .photo img{width:100%;border-radius:12px;object-fit:cover;box-shadow:0 18px 40px rgba(0,0,0,0.35)}
+
+/* headings */
+h2{font-family:var(--ff-heading);font-size:1.9rem;color:var(--accent);margin-bottom:10px}
+h3{font-family:var(--ff-heading);font-size:1.05rem;margin:0;color:var(--white)}
+
+/* grid cards */
+.highlight-scroll {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.scroll-inner {
+  display: flex; /* horizontal scrolling */
+  gap: 20px;
+  padding: 10px;
+}
+
+.card {
+  position: relative;
+  min-width: 300px; /* card width */
+  min-height: 350px; /* card height */
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0; /* prevents cards from shrinking in flex container */
+  box-shadow: 0 8px 30px rgba(0,0,0,0.28);
+  transition: transform .35s var(--ease);
+}
+
+.card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+/* hours/map */
+.section.dark{background:linear-gradient(180deg,var(--forest-2), rgba(20,30,20,0.8));color:var(--accent)}
+.split .hours ul{list-style:none;padding:0;margin:12px 0}
+.split .hours ul li{padding:8px 0;color:rgba(255,255,255,0.95)}
+
+/* map iframe */
+.map iframe{width:100%;height:320px;border:0;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.25);}
+
+/* contact & socials */
+.contact-grid{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:start}
+.socials{display:flex;gap:12px;margin-top:10px}
+.social img{width:42px;height:42px;filter:invert(1) sepia(.1) saturate(.2);background:transparent;border-radius:10px;padding:6px}
+
+/* style for inline SVG social icons in the footer */
+.footer .social svg { width:36px; height:36px; display:block; color:var(--white); }
+.footer .social { display:inline-flex; align-items:center; justify-content:center; padding:6px; border-radius:10px; text-decoration:none; }
+
+/* reviews */
+.reviews blockquote{background:rgba(255,255,255,0.02);padding:14px;border-radius:10px;margin-bottom:14px;color:rgba(255,255,255,0.95)}
+
+/* footer */
+.footer{padding:28px 0;background:rgba(0,0,0,0.08);border-top:1px solid rgba(255,255,255,0.02)}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.f-logo{width:48px;height:48px;border-radius:10px}
+
+/* Menu page styles */
+.menu-header{position:sticky;top:18px;background:transparent;padding:20px 0;z-index:90}
+.menu-head-inner{display:flex;align-items:center;gap:16px;justify-content:space-between}
+.menu-page{padding:46px 0 80px}
+.menu-controls{display:flex;flex-direction:column;gap:12px;margin-bottom:22px}
+#menuSearch{padding:12px;border-radius:10px;border:0;background:rgba(255,255,255,0.03);color:var(--white)}
+.menu-filter-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+.mfilter{padding:8px 12px;border-radius:10px;background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--accent)}
+.mfilter.active{background:var(--accent);color:var(--forest);font-weight:700}
+
+/* menu list */
+.menu-list{display:block}
+.menu-category{margin-bottom:28px;padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01))}
+.menu-category h2{margin:0 0 12px;color:var(--accent)}
+.item{display:flex;justify-content:space-between;align-items:flex-start;padding:12px 0;border-bottom:1px dashed rgba(255,255,255,0.02)}
+.item-left{max-width:78%}
+.item-right{min-width:70px;text-align:right;font-weight:700;color:var(--accent)}
+.item.small{font-size:0.95rem;color:rgba(255,255,255,0.9);padding-top:8px}
+
+/* responsive */
+@media (max-width:900px){
+  .split{flex-direction:column}
+  .contact-grid{grid-template-columns:1fr}
+  .nav{display:none}
+  .mobile-toggle{display:block}
+  .header-inner{padding:10px}
+  .hero-title{font-size:2.2rem}
+  .hero-logo{width:86px;height:86px}
+  .grid{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+  .menu-head-inner{flex-direction:column;gap:12px;align-items:flex-start}
+
+  /* mobile nav open style */
+  .nav.open{
+    display:flex;
+    position:absolute;
+    right:20px;
+    top:74px;
+    flex-direction:column;
+    gap:10px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+    padding:12px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.25);
+    z-index:130;
+  }
+}
+
+/* subtle focus outlines (accessible) */
+a:focus, button:focus, input:focus{outline:3px solid rgba(234,220,194,0.18);outline-offset:3px}
+
+/* small animation helpers */
+.is-hidden{opacity:0;transform:translateY(12px)}
+.reveal{transition:opacity .9s var(--ease), transform .9s var(--ease);opacity:1;transform:none}
+/* Contact section SFG social icons */
+#contact .socials .social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 10px;
+  text-decoration: none;
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+  transition: transform 0.28s var(--ease), background 0.28s var(--ease);
+}
+
+#contact .socials .social svg.sfg-icon {
+  width: 42px;      /* same size as your old images */
+  height: 42px;
+   color: var(--white);   /* THIS sets currentColor to white */
+  fill: currentColor; /* white icons by default */
+  transition: fill 0.28s var(--ease), transform 0.28s var(--ease);
+}
+
+#contact .socials .social:hover {
+  background: rgba(255,255,255,0.06);
+  transform: translateY(-2px);
+}
+
+#contact .socials .social:hover svg.sfg-icon {
+  fill: var(--accent);  /* change color on hover to your green accent */
+}
+/* --- Small additions: horizontally scrollable menu highlights & button tweaks --- */
+
+/* Highlight scroll wrapper (compact height for showing 4+ images) */
+.highlight-scroll{
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 12px 4px;
+  margin-top: 12px;
+}
+.highlight-scroll .scroll-inner{
+  display: inline-flex;
+  gap: 14px;
+  padding-bottom: 6px;
+}
+.highlight-scroll .card {
+  min-width: 240px;       /* card width */
+  max-width: 260px;
+  min-height: 300px;      /* set height so image can fill */
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.28);
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+  position: relative;     /* needed for absolute image */
+}
+
+.highlight-scroll .card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;           /* now fills entire card */
+  object-fit: cover;
+}
+
+
+/* Make sure button elements with .btn inherit your existing anchor .btn styling */
+button.btn{
+  border: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Slight spacing tweak so filter row stays compact on small screens */
+.menu-filters .btn{
+  padding:8px 12px;
+  font-size:0.94rem;
+}
+
+/* hide native button outline but keep accessible focus — keep your existing focus styles */
+button.btn:focus{outline:none}
+/* Hover zoom for highlight cards */
+.highlight-scroll .card img {
+  transition: transform 0.45s var(--ease);
+}
+
+.highlight-scroll .card:hover img {
+  transform: scale(1.12); /* zoom in slightly on hover */
+}
+
