@@ -1,200 +1,94 @@
-<!doctype html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Green Dot Café — Good Damn Coffee. Conscious Living.</title>
-  <meta name="description" content="Green Dot Café — Good Damn Coffee. Conscious Living. Parkwood & Rosebank. Order on Uber Eats." />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swag Cutz | Barber Shop in Midrand</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-<!-- SFG Icons Definition (add just after <body>) -->
-<svg style="display: none;">
-  <!-- Instagram -->
-  <symbol id="sfg-instagram" viewBox="0 0 24 24">
-    <path fill="currentColor" d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5ZM12 7a5 5 0 1 1 0 10a5 5 0 0 1 0-10Zm0 1.5A3.5 3.5 0 1 0 12 15a3.5 3.5 0 0 0 0-7ZM17.75 6a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5Z"/>
-  </symbol>
 
-  <!-- TikTok -->
-  <symbol id="sfg-tiktok" viewBox="0 0 24 24">
-    <path fill="currentColor" d="M16.5 3c.2 1.3 1.1 2.4 2.5 2.9V9c-1.6-.1-3.1-.6-4.5-1.4v5.9a5.5 5.5 0 1 1-5.5-5.5c.5 0 1 .1 1.5.2v2.1a3.5 3.5 0 1 0 2 6.4V3h4z"/>
-  </symbol>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Swag Cutz</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <!-- Uber Eats -->
-  <symbol id="sfg-ubereats" viewBox="0 0 24 24">
-    <path fill="currentColor" d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm5 8v4h2v-1h2v1h2v-4h-2v1h-2v-1H9Zm8-3v8h2v-8h-2Z"/>
-  </symbol>
-</svg>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h1>Fresh Cuts, Sharp Style.</h1>
+    <p>Located in the heart of Midrand — Swag Cutz delivers precision, personality, and perfection in every cut.</p>
+  </section>
 
-  <!-- Floating glass header -->
-  <header class="header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Green Dot Café home">
-        <img src="images/152769659_1175921316211376_146868840016642031_n.jpg" alt="Green Dot Café logo" class="logo">
-        <span class="brand-text">Green Dot Café</span>
-      </a>
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">Men's Haircuts</div>
+      <div class="service-card">Beard Trims</div>
+      <div class="service-card">Kids Cuts</div>
+      <div class="service-card">Line-Ups</div>
+      <div class="service-card">Hair Styling</div>
+    </div>
+  </section>
 
-      <nav id="nav" class="nav">
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="#about">About</a>
-        <a href="#hours">Hours</a>
-        <a href="#contact">Contact</a>
-      </nav>
+  <!-- Gallery Section -->
+  <section class="gallery" id="gallery">
+    <h2>Our Work</h2>
+    <div class="gallery-grid">
+      <img src="images/Screenshot%202025-10-04%20120534.png" alt="Cut 1">
+      <img src="images/Screenshot%202025-10-04%20120551.png" alt="Cut 2">
+      <img src="images/Screenshot%202025-10-04%20120957.png" alt="Cut 3">
+      <img src="images/Screenshot%202025-10-04%20121024.png" alt="Cut 4">
+    </div>
+  </section>
 
-      <div class="header-actions">
-        <!-- ORDER button restored -->
-        <a class="btn primary" href="https://www.ubereats.com/za/store/green-dot-cafe/X1OWaJ--TIe2025uF4pgeA" target="_blank" rel="noopener">Order</a>
-        <button id="mobileToggle" class="mobile-toggle" aria-label="Open menu">☰</button>
+  <!-- Reviews Section -->
+  <section class="reviews" id="reviews">
+    <h2>Customer Reviews</h2>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <p>"Best barber in Midrand! Always perfect cuts."</p>
+        <span>- John D.</span>
+      </div>
+      <div class="review-card">
+        <p>"Friendly staff and amazing service every time."</p>
+        <span>- Sarah L.</span>
+      </div>
+      <div class="review-card">
+        <p>"Swag Cutz never disappoints — highly recommend!"</p>
+        <span>- Mike P.</span>
       </div>
     </div>
-  </header>
+  </section>
 
-  <!-- HERO -->
-  <main>
-    <section id="hero" class="hero">
-      <div class="hero-media" aria-hidden="true">
-        <video class="hero-video" autoplay muted loop playsinline>
-          <source src="videos/hero.mp4" type="video/mp4">
-        </video>
-        <div class="steam"></div>
-      </div>
-
-      <div class="hero-inner container">
-        <img class="hero-logo" src="images/152769659_1175921316211376_146868840016642031_n.jpg" alt="Green Dot Café logo">
-        <h1 class="hero-title">Good Damn Coffee.<span class="muted"> Conscious Living.</span></h1>
-        <p class="hero-sub">A modern street-level café inspired by European street cafés — calm, fresh & stylish.</p>
-        <div class="hero-cta">
-          <a class="btn primary" href="menu.html">View Menu</a>
-          <a class="btn ghost" href="https://www.ubereats.com/za/store/green-dot-cafe/X1OWaJ--TIe2025uF4pgeA" target="_blank" rel="noopener">Order on Uber Eats</a>
-          <a class="social-link" href="https://www.instagram.com/green_dot_cafe/" target="_blank" rel="noopener" aria-label="Instagram">
-            <img src="icons/instagram.svg" alt="">
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section split container">
-      <div class="col text">
-        <h2>Our Story</h2>
-        <p>Our founder recalls a bright green dress she adored as a child — green became a symbol. The <strong>DOT</strong> represents the moment she made a full-stop decision to pursue a greener, more conscious life. Travel through Europe's street cafés inspired Green Dot: street-level warmth, excellent coffee and mindful choices.</p>
-        <p>Our beans are a medium Brazil/Honduras blend — expect chocolatey and hazelnut notes. Recommended: <strong>Cortado</strong> or <strong>Flat White</strong>.</p>
-        <p class="micro">Share your DOT with us: tag <a href="https://www.instagram.com/green_dot_cafe/" target="_blank" rel="noopener">@green_dot_cafe</a></p>
-      </div>
-      <figure class="col photo">
-        <img src="images/Screenshot%202025-10-09%20095200.png" alt="Founder or cafe interior">
-      </figure>
-    </section>
-
-    <!-- MENU HIGHLIGHTS (UPDATED: smaller, horizontal scroll, buttons use .btn) -->
-    <section id="menu-highlights" class="section container">
-      <h2>Menu Highlights</h2>
-
-      <div class="menu-filters" role="tablist" aria-label="Menu categories">
-        <!-- Buttons now use your .btn styles so they match other buttons -->
-       
-        <a class="btn ghost" href="menu.html">Full Menu</a>
-      </div>
-
-      <!-- Horizontally scrollable highlights (compact height so you can fit 4+ images) -->
-      <div class="highlight-scroll" aria-label="Menu highlights scroll">
-        <div class="scroll-inner">
-          <!-- keep `card` class so existing JS filters still work -->
-          <article class="card" data-cat="breakfast">
-            <img src="images/Screenshot%202025-10-09%20095213.png" alt="Classic Granola Bowl">
-          </article>
-
-          <article class="card" data-cat="drinks">
-            <img src="images/Screenshot%202025-10-09%20095239.png" alt="Cortado">
-          </article>
-
-          <article class="card" data-cat="brunch">
-            <img src="images/Screenshot%202025-10-09%20095232.png" alt="Avocado Parfait">
-          </article>
-
-          <article class="card" data-cat="smoothies">
-            <img src="images/Screenshot%202025-10-09%20095221.png" alt="Smoothie">
-          </article>
-            <article class="card" data-cat="smoothies">
-            <img src="images/Screenshot%202025-10-09%20095314.png" alt="Smoothie">
-          </article>
-            <article class="card" data-cat="smoothies">
-            <img src="images/Screenshot%202025-10-09%20095254.png" alt="Smoothie">
-          </article>
-          <!-- you can add more article.card items here; they will scroll horizontally -->
-        </div>
-      </div>
-    </section>
-
-    <!-- HOURS & MAP -->
-    <section id="hours" class="section dark container split">
-      <div class="col hours">
-        <h2>Operating Hours</h2>
-        <ul>
-          <li>Monday–Wednesday: 7:00 – 16:00</li>
-          <li>Thursday: 7:00 – 16:00</li>
-          <li>Friday: 7:00 – 18:00</li>
-          <li>Saturday: 7:00 – 18:00</li>
-          <li>Sunday: 7:00 – 16:00</li>
-        </ul>
-        <a class="btn primary" href="https://www.ubereats.com/za/store/green-dot-cafe/X1OWaJ--TIe2025uF4pgeA" target="_blank">Order on Uber Eats</a>
-      </div>
-      <div class="col map">
-        <iframe title="Green Dot Cafe map" src="https://www.google.com/maps?q=148+Jan+Smuts+Ave+Rosebank+Johannesburg+2196&output=embed" loading="lazy"></iframe>
-      </div>
-    </section>
-
-    <!-- CONTACT & SOCIALS (SFG icons kept here ONLY) -->
-    <section id="contact" class="section container">
-      <div class="contact-grid">
-
-        <!-- Contact Info -->
-        <div class="contact-info">
-          <h2>Contact</h2>
-          <p><strong>Phone:</strong> <a href="tel:+27684409634" style="color:var(--accent);">068 440 9634</a></p>
-          <p><strong>Address:</strong> 148 Jan Smuts Ave, Rosebank, Johannesburg, 2196</p>
-
-          <!-- Social Icons (SFG icons) — THESE LIVE HERE now -->
-          <div class="socials">
-            <a class="social" href="https://www.instagram.com/green_dot_cafe/" target="_blank" rel="noopener" aria-label="Instagram">
-              <svg class="sfg-icon"><use href="#sfg-instagram"></use></svg>
-            </a>
-            <a class="social" href="https://www.tiktok.com/@greendotcafe" target="_blank" rel="noopener" aria-label="TikTok">
-              <svg class="sfg-icon"><use href="#sfg-tiktok"></use></svg>
-            </a>
-            <a class="social" href="https://www.ubereats.com/za/store/green-dot-cafe/X1OWaJ--TIe2025uF4pgeA" target="_blank" rel="noopener" aria-label="Uber Eats">
-              <svg class="sfg-icon"><use href="#sfg-ubereats"></use></svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- Reviews -->
-        <aside class="reviews">
-          <h3>Reviews</h3>
-          <blockquote>“Amazing coffee and vibe — perfect for a slow morning.” <cite>— Google 4.5★</cite></blockquote>
-          <blockquote>“Great food and quick Uber Eats delivery.” <cite>— Uber Eats 4.6★</cite></blockquote>
-        </aside>
-
-      </div>
-    </section>
-  </main>
-
-  <!-- FOOTER (social icons removed from footer per your request) -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div class="left">
-        <img src="images/152769659_1175921316211376_146868840016642031_n.jpg" alt="logo" class="f-logo">
-        <p style="color:rgba(255,255,255,0.9)">© <span id="year"></span> Green Dot Café</p>
-      </div>
-      <div class="right">
-        <!-- Footer social icons REMOVED — icons live in Contact section now -->
-      </div>
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Visit Us</h2>
+    <p><strong>Address:</strong> Shop 9, Midrand Value Centre, CRN Old Pretoria Main & Olifantsfontein Rd, Midrand, 1783</p>
+    <p><strong>Hours:</strong> Open until 8 PM</p>
+    <p><strong>Phone:</strong> <a href="tel:0606364102">060 636 4102</a></p>
+    <div class="contact-buttons">
+      <a href="tel:0606364102" class="btn">Call Now</a>
+      <a href="https://goo.gl/maps/YourMapLinkHere" class="btn" target="_blank">Get Directions</a>
     </div>
+    <div class="social-links">
+      <a href="#" target="_blank" id="instagram-link"><i class="fab fa-instagram"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Swag Cutz — All Rights Reserved</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
